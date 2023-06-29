@@ -18,6 +18,7 @@ const config = {
 		alias: {
 			// alias 설정 
 			$components: './src/components',
+			$tutorial: './src/tutorial',
 		}
 	}
 };

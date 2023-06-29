@@ -1,4 +1,4 @@
 <script lang="ts">
 </script>
 
-<h1>Svelte Tutorial</h1>
+<h2>Root Page</h2>
