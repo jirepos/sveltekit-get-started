@@ -1,5 +1,12 @@
 module.exports = {
 	root: true,
+  // settings: {
+	// 	// a11y 경고 막기 
+  //   'svelte4/ignore-warnings': (warning) => {
+	// 		return warning.code.startsWith('a11y-')
+  //     // return warning.code === 'a11y-click-events-have-key-events'
+  //   },
+  // },	
 	extends: [
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
