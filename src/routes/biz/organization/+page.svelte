@@ -1,5 +1,3 @@
-<script>
-  // Organization List 
-  import OrgList from "./OrgList.svelte";
+<script lang="ts">
+  
 </script>
-<OrgList/>

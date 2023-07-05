@@ -1,9 +1,14 @@
+<script lang="ts">
+
+// Organization Module의 List 
+  export let userId: string = "Not assigned"; 
+</script>
+
+
 <div>
   <h2>OrgList</h2>
+  
+  <h3>{userId}</h3>
 
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-
-    <button type="button" class="btn btn-primary">Primary</button>
+  <button type="button" class="btn btn-primary">Primary</button>
 </div>

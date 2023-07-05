@@ -4,7 +4,9 @@
   import '$lib/styles/global.scss'
 </script>
 
+
+
 <!-- 최 상위 레이아웃입니다.  -->
-<div>Root Layout</div> 
+<h1>Root Layout</h1> 
 <!-- slot 안에 +page.svelte가 표시됩니다. -->
-<slot/>
+<slot/> 

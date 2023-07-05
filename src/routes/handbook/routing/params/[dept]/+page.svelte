@@ -1,0 +1,1 @@
+<h1>[slug] Page</h1>
