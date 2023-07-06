@@ -2,8 +2,8 @@
 	"name": "sveltekit-get-started",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
+		"dev": "vite --mode development dev",
+		"build": "vite --mode development build",
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -35,7 +35,9 @@
 	"type": "module",
 	"dependencies": {
 		"bootstrap": "^5.3.0",
+		"dotenv": "^16.3.1",
 		"jquery": "^3.7.0",
-		"monaco-editor": "^0.39.0"
+		"monaco-editor": "^0.39.0",
+		"vite-plugin-static-copy": "^0.16.0"
 	}
 }
