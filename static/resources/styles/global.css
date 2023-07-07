@@ -1,0 +1,20 @@
+body { 
+  margin: 0; 
+  padding: 10px;
+}
+
+.module-div { 
+  width: 100%;
+  background-color: white; 
+}
+
+.top-menu { 
+  background-color: gray;
+  text-align: right;
+}
+.module-main-title {
+  background-color: red;
+}
+.module-main-bottom { 
+  text-align: center;
+}

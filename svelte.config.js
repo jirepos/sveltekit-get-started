@@ -34,10 +34,10 @@ const config = {
 		},
 		paths: {
 			base: '' // defulat 값은 "", '/kit'로 설정하면  /aa/bb 를 /kit/aa/bb로 호출해야 
+		},
+		env :  {
+			dir: "env"
 		}
-		// env :  {
-		// 	dir: "env"
-		// }
 	}
 };
 

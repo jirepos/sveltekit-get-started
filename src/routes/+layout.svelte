@@ -1,12 +1,48 @@
 <script>
   // $lib 을 사용하여 src/lib 폴더에 있는 파일을 불러올 수 있습니다.
   // global styles 적용
-  import '$lib/styles/global.scss'
+  // import '$lib/styles/global.scss'
+
+  // npm 패키지로 설치한 경우 다음과 같이 임포트합니다. 
+  // import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+  // 그런데 document가 없다고 오류 발생합니다. 
+  // import * as bootstrap from 'bootstrap';
+
 </script>
 
+<svelte:head>
+	<title>SvelteKit 1.0</title>
+	<!-- root layout을 상속 받는 모든 라우트에 적용됩니다.   -->
+    <link href="/resources/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/resources/styles/global.css" rel="stylesheet">
+    <script src="/resources/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
 
+    <!-- 아래와 같이 CDN으로 로드하는 것도 가능합니다. -->
+    <!-- <link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+		crossorigin="anonymous"
+	/> -->
+  <!-- 
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"
+	></script>
+  -->
+
+</svelte:head>
 
 <!-- 최 상위 레이아웃입니다.  -->
-<h1>Root Layout</h1> 
+<div>
+  <a href="/">Home</a>
+</div>
+<hr>
+
 <!-- slot 안에 +page.svelte가 표시됩니다. -->
 <slot/> 
+
+
+
+
