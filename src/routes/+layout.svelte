@@ -15,7 +15,13 @@
 	<!-- root layout을 상속 받는 모든 라우트에 적용됩니다.   -->
     <link href="/resources/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="/resources/styles/global.css" rel="stylesheet">
-    <script src="/resources/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
+
+ 	<!-- 외부 리소스에 on:[eventName]을 사용하여 이벤트를 바인딩할 수 있다.  -->
+	<!-- 그러나 둘 중에 어느 것이 먼저 로드될지는 알 수 없다. -->
+	<!-- <link	rel="stylesheet"href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" 	/> -->
+
+
+  <script src="/resources/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
 
     <!-- 아래와 같이 CDN으로 로드하는 것도 가능합니다. -->
     <!-- <link
@@ -32,6 +38,10 @@
 	></script>
   -->
 
+
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js" ></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
+
 </svelte:head>
 
 <!-- 최 상위 레이아웃입니다.  -->
@@ -42,7 +52,4 @@
 
 <!-- slot 안에 +page.svelte가 표시됩니다. -->
 <slot/> 
-
-
-
 
