@@ -1,0 +1,40 @@
+{
+	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true
+	}
+	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
+	//
+	// If you want to overwrite includes/excludes, make sure to copy over the relevant includes/excludes
+	// from the referenced tsconfig.json - TypeScript does not merge them in
+}
+// {
+// 	"extends": "./.svelte-kit/tsconfig.json",
+// 	"compilerOptions": {
+// 		"allowJs": true,
+// 		"checkJs": true,
+// 		"esModuleInterop": true,
+// 		"forceConsistentCasingInFileNames": true,
+// 		"resolveJsonModule": true,
+// 		"skipLibCheck": true,
+// 		"sourceMap": true,
+// 		"strict": true,
+// 		"declaration": true,
+// 		"noImplicitAny": true,
+// 		"types": [],
+// 		// "typeRoots": [
+// 		// 	"./node_modules/@types"
+// 		//  ],
+// 	},
+// 	// 컴파일에서 제외할 파일 디렉토리 패턴 
+// 	// .sveltekit/tsconfig.json를 상속 받는데 그 안에 정의가 되어 있다. 
+// 	// 여기서 exlude를 정의하면 엎어 씌우게 된다. 
+// 	// "exclude": [ "build", "node_modules", ".vscode"]
+// }

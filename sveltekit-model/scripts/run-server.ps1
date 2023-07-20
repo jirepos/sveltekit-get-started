@@ -1,0 +1,1 @@
+$Env:HOST=127.0.0.1;  $Env:PORT=4000; $Env:DOTENV_CONFIG_PATH = "./build/client/env/.env.development"; node -r dotenv/config ./build/index.js
