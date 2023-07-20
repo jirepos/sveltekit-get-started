@@ -1,6 +1,4 @@
-
 <div class="sveltekit-layout">
-  <hr>
-  <h2>SvelteKit</h2>
+  <h2>Svelte How-to</h2>
   <slot/>
 </div>

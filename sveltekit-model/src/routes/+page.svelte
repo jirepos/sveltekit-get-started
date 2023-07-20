@@ -4,8 +4,7 @@
 
 <!-- URL로만 접근 시 이 페이지가 표시됩니다.  -->
 <!-- 이 페이지는 /routes/+layout.svelte의 slot tag 안에 표시됩니다.-->
-<h2>Contents:</h2>
-
+<h1>Contents:</h1>
 <ul>
   <li><a href="/portal">Portal</a></li>
   <li><a href="/tutorial">Tutorial</a></li>

@@ -5,7 +5,7 @@
 		"dev": "vite --mode development dev --host ejin.com",
 		"build": "vite  --mode development build",
 		"preview": "vite --mode development preview",
-		"production":"powershell ./scripts/run-server.ps1",
+		"production": "powershell ./scripts/run-server.ps1",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -36,6 +36,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"dotenv": "^16.3.1"
+		"dotenv": "^16.3.1",
+		"monaco-editor": "^0.40.0"
 	}
 }

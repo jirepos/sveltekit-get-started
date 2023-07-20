@@ -1,16 +1,28 @@
-<h4>Contents:</h4>
+<h3>Contents:</h3>
 <ul>
-  <li>
-    <a href="sveltekit/env">$app/env</a>
-  </li>
-  <li>
-    sveltekit/jQuery 
-    <ul>
-      <li><a href="sveltekit/jquery/rootlayout">Root Layout에서 jQuery load</a></li>
-      <li><a href="sveltekit/jquery/scriptelement">Create Element</a></li>
-      <li><a href="sveltekit/jquery/scriptsrc">&lt;script src="jquery"&gt;</a></li>
-      <li><a href="sveltekit/jquery/docbody">document.body.appendChild</a></li>
-      <li><a href="sveltekit/jquery/nodejs">import jQuery from 'jquery'</a></li>
-    </ul>
-  </li>
+	<li>
+		<a href="sveltekit/environment-variables">환경변수 사용</a>
+	</li>
+	<li>
+		<a href="sveltekit/prerender">정적인 페이지로 사전 렌더링</a>
+	</li>
+	<li>
+		<a href="sveltekit/redirect/from">리다이렉트 테스트</a>
+	</li>
+	<li>
+		<a href="sveltekit/throw-redirect/throw">throw redirect()  테스트</a>
+	</li>	
+	<li>
+		<a href="sveltekit/routing">라우팅</a>
+	</li>
+	<li>
+		<a href="sveltekit/app-stores">$app/stores</a>
+	</li>
+	<li>
+		<a href="sveltekit/app-path">$app/path</a>
+	</li>	
+	<li>
+		<a href="sveltekit/nodejs-package">Node.js Built-in Package 사용</a>
+	</li>
+	
 </ul>

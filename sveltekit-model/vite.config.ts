@@ -2,10 +2,12 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 
+
 export default defineConfig({
 	plugins: [
 		// 순서대로 실행된다. 
 		sveltekit(),
+		
 		viteStaticCopy({
       targets: [
         {
@@ -26,5 +28,7 @@ export default defineConfig({
 				`,
 			}
 		}
-	}	  
+	},
+	build: {
+	}	 
 });

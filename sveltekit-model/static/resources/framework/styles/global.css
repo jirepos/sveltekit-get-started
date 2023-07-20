@@ -3,18 +3,25 @@ body {
   padding: 10px;
 }
 
-.module-div { 
-  width: 100%;
-  background-color: white; 
+.root-layout { 
+  background-color: beige;
 }
 
-.top-menu { 
-  background-color: gray;
-  text-align: right;
+.tutorial-layout { 
+  background-color: lightblue;
 }
-.module-main-title {
-  background-color: red;
+
+.sveltekit-layout { 
+  background-color :rgb(30, 210, 39);
 }
-.module-main-bottom { 
-  text-align: center;
+
+
+.tutorial-topic { 
+  background-color :white;
+  padding-top: 20px;
+  border: 1px solid black;
+}
+
+.h4-url { 
+  color: blue;
 }
