@@ -2,10 +2,27 @@
 	"name": "sveltekit-model",
 	"version": "0.0.1",
 	"scripts": {
-		"dev": "vite --mode development dev --host ejin.com",
+
+		"dev":       "powershell $Env:SVELTE_DOMAIN=./scripts/setenv-dev.ps1; vite --mode development dev --host $Env:SVELTE_DOMAIN",
+		"dev:local": "powershell $Env:SVELTE_DOMAIN=./scripts/setenv-local.ps1; vite --mode localpc dev --host $Env:SVELTE_DOMAIN",
+		"dev:dev":   "powershell $Env:SVELTE_DOMAIN=./scripts/setenv-dev.ps1; vite --mode development dev --host $Env:SVELTE_DOMAIN",
+		"dev:prod":  "powershell $Env:SVELTE_DOMAIN=./scripts/setenv-prod.ps1; vite --mode production dev --host $Env:SVELTE_DOMAIN",
+
 		"build": "vite  --mode development build",
+		"build:dev": "vite  --mode development build",
+		"build:local": "vite  --mode localpc build",
+		"build:prod": "vite  --mode production build",
+		
 		"preview": "vite --mode development preview",
-		"production": "powershell ./scripts/run-server.ps1",
+		"preview:dev": "vite --mode development preview",
+		"preview:local": "vite --mode localpc preview",
+		"preview:prod": "vite --mode production preview",
+		
+		"start": "powershell ./scripts/start-dev.ps1",
+		"start:dev": "powershell ./scripts/start-dev.ps1",
+		"start:local": "powershell ./scripts/start-local.ps1",
+		"start:prod": "powershell ./scripts/start-prod.ps1",
+
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",

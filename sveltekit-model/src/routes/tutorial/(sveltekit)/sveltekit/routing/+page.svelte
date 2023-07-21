@@ -5,5 +5,5 @@
 <hr>
 <h4 class="h4-url">{$page.url}</h4>
 <ul>
-  <li><a href="/tutorial/sveltekit/routing/params">/tutorial/(sveltekit)/sveltekit/routing/params</a></li>
+  <li><a href="/tutorial/sveltekit/routing/params">파라미터 라우팅 예제: /tutorial/(sveltekit)/sveltekit/routing/params</a></li>
 </ul>

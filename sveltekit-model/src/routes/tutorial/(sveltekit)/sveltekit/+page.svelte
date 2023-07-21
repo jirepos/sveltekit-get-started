@@ -16,6 +16,9 @@
 		<a href="sveltekit/routing">라우팅</a>
 	</li>
 	<li>
+		<a href="sveltekit/loading-data">Loading Data</a>
+	</li>	
+	<li>
 		<a href="sveltekit/app-stores">$app/stores</a>
 	</li>
 	<li>
