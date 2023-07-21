@@ -30,6 +30,7 @@
     부모 컴포넌트에서 header slot에 전달하는 컨텐츠이다. 
   </div> -->
 	<div slot="footer">부모 컴포넌트에서 footer slot에 전달하는 컨텐츠이다.</div>
+
 </NamedSlot>
 
 

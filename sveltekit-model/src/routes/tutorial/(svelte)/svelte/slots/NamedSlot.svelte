@@ -8,6 +8,8 @@
 	</slot>
 
 	Named Slot의 내부 컨텐트이다. 
+	
+
 
   <!-- $$slots.[슬롯이름]으로 참조할 수 있다. true or flase 값을 가진다.  -->
   <!-- https://svelte.dev/docs/special-elements#slot -->
