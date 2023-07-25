@@ -10,12 +10,13 @@ const config = {
 	// for more information about preprocessors
 	preprocess: vitePreprocess(),
 	// a11y 경고 막기
-	// onwarn: (warning, handler) => {
-	// 	if(warning.code.startsWith('a11y-')) return
-	// 	if(warning.code === 'css-unused-selector') return;
-	// 	if(warning.code === 'a11y-click-events-have-key-events') return;
-  //   if (warning.code === 'a11y-no-noninteractive-element-interactions') return;
-	// 	handler(warning);	
+	onwarn: (warning, handler) => {
+		if(warning.code.startsWith('a11y-')) return
+		if(warning.code === 'css-unused-selector') return;
+		if(warning.code === 'a11y-click-events-have-key-events') return;
+    if (warning.code === 'a11y-no-noninteractive-element-interactions') return;
+		handler(warning);	
+	},
 	kit: {
 		adapter: adapter(
 			{

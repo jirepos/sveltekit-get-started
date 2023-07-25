@@ -1,6 +1,14 @@
-<h3>Contents:</h3>
 <ul>
 	<li>
+		<a href="sveltekit/core-concepts">Core concepts</a>
+	</li>
+	<li>
+		<a href="sveltekit/advanced">Advanced</a>
+	</li>
+
+
+
+	<!-- <li>
 		<a href="sveltekit/environment-variables">환경변수 사용</a>
 	</li>
 	<li>
@@ -26,6 +34,6 @@
 	</li>	
 	<li>
 		<a href="sveltekit/nodejs-package">Node.js Built-in Package 사용</a>
-	</li>
+	</li> -->
 	
 </ul>

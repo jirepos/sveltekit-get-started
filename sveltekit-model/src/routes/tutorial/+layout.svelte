@@ -7,7 +7,7 @@
 	// 그런데 document가 없다고 오류 발생합니다.
 	// import * as bootstrap from 'bootstrap';
 </script>
-
+(2)
 <svelte:head>
 	<title>SvelteKit 1.0</title>
 	<!-- root layout을 상속 받는 모든 라우트에 적용됩니다.   -->
