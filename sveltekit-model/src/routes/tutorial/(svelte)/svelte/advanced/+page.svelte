@@ -13,6 +13,9 @@
     <a href="advanced/slots">Slots</a>
   </li>
   <li>
+    <a href="advanced/nested-slot">Nested slot</a>
+  </li>
+  <li>
     <a href="advanced/context-module">context=module</a>
   </li>
   <li>

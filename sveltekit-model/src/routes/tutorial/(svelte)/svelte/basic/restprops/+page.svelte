@@ -14,3 +14,4 @@
   <!-- {`{...furniture}`}는 spread props를 사용  -->
 	<EndTable {...furniture} />
 {/each}
+
