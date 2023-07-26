@@ -8,6 +8,9 @@
       <a href="/tutorial/svelte/basic/props">Props</a> 
     </li>
     <li>
+      <a href="/tutorial/svelte/basic/restprops">$$restProps, $$props</a> 
+    </li>    
+    <li>
       <a href="/tutorial/svelte/basic/logic">Logic</a> 
     </li>
     <li>
