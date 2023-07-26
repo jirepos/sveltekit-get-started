@@ -22,5 +22,11 @@
     <li>
       <a href="/tutorial/svelte/basic/stores">Stores</a>
     </li>
+    <li>
+      <a href="/tutorial/svelte/basic/styling">Styling</a>
+    </li>
+    <li>
+      <a href="/tutorial/svelte/basic/reactivity">Reactivity</a>
+    </li>
   </ul>
 </div>

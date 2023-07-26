@@ -1,39 +1,18 @@
 <ul>
 	<li>
-		<a href="sveltekit/core-concepts">Core concepts</a>
+		<a href="sveltekit/routing">Routing</a>
 	</li>
 	<li>
-		<a href="sveltekit/advanced">Advanced</a>
-	</li>
-
-
-
-	<!-- <li>
-		<a href="sveltekit/environment-variables">환경변수 사용</a>
+		<a href="sveltekit/routing-advanced">Advanced routing</a>
 	</li>
 	<li>
-		<a href="sveltekit/prerender">정적인 페이지로 사전 렌더링</a>
+		<a href="sveltekit/loading-data">Loading data</a>
 	</li>
 	<li>
-		<a href="sveltekit/redirect/from">리다이렉트 테스트</a>
+		<a href="sveltekit/page-options">Page options</a>
 	</li>
 	<li>
-		<a href="sveltekit/throw-redirect/throw">throw redirect()  테스트</a>
-	</li>	
-	<li>
-		<a href="sveltekit/routing">라우팅</a>
+		<a href="sveltekit/modules">Modules</a>
 	</li>
-	<li>
-		<a href="sveltekit/loading-data">Loading Data</a>
-	</li>	
-	<li>
-		<a href="sveltekit/app-stores">$app/stores</a>
-	</li>
-	<li>
-		<a href="sveltekit/app-path">$app/path</a>
-	</li>	
-	<li>
-		<a href="sveltekit/nodejs-package">Node.js Built-in Package 사용</a>
-	</li> -->
 	
 </ul>

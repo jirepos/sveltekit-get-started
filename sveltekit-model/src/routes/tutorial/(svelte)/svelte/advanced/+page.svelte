@@ -15,4 +15,13 @@
   <li>
     <a href="advanced/context-module">context=module</a>
   </li>
+  <li>
+    <a href="advanced/element-directives">Element directives</a>
+  </li>  
+  <li>
+    <a href="advanced/motion">Motion</a>
+  </li>    
+  <li>
+    <a href="advanced/dynamic-import">Dynamicaly importing a component</a>
+  </li>      
 </ul>

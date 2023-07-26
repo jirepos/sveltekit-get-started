@@ -1,9 +1,6 @@
-<script lang="ts">
-  import { getStores, navigating, page, updated } from '$app/stores';
-</script>
-
-<hr>
-<h4 class="h4-url">{$page.url}</h4>
 <ul>
-  <li><a href="/tutorial/sveltekit/routing/params">파라미터 라우팅 예제: /tutorial/(sveltekit)/sveltekit/routing/params</a></li>
+  <li><a href="routing/layout/current-layout">현재 레이아웃 벗어나기</a></li>
+  <li><a href="routing/layout/layout">부모 레이아웃 벗어나기 (1)</a></li>
+  <li><a href="routing/layout/page">부모 레이아웃 벗어나기 (2)</a></li>
+  
 </ul>
