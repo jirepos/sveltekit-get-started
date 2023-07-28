@@ -1,4 +1,4 @@
-
+/** Ajax 통신에서 오류가 발생하는 경우 이 에러를 던집니다.  */
 export class AjaxError extends Error { 
 
   /** 응답 헤더  */
@@ -9,6 +9,7 @@ export class AjaxError extends Error {
   status:number;
   /** 응답 메시지 오류 정보 */
   isJson:boolean = false; 
+
 
   /**
    * 생성자 
@@ -35,6 +36,12 @@ export class AjaxError extends Error {
 }///~
 
 
+
+/** 
+ * fetch() 함수는 두 번째 인자로 RequestInit 객체를 받습니다. fetch() 함수에 전달할 
+ * RequestInit 인터페이스에 awatable 등의 필드를 추가한 인터페이스입니다. Ajax 클래스의 
+ * 메소드를 사용할 경우 옵션으로 이 인터페이스의 인스턴스를 사용합니다. 
+*/
 export interface AjaxRequestInit extends RequestInit {
   awaitable?: boolean; // 기본은 await 하지 않는다.  
   timeout?: number;    // 타임아웃 
@@ -42,11 +49,15 @@ export interface AjaxRequestInit extends RequestInit {
   fileName?:string; // 다운로드할 파일 이름 
 }
 
+/** Http Method는 GET과 POST만 사용합니다.  */
 enum HttpMethod {
   GET = 'GET',
   POST = 'POST'
 }
 
+/**
+ * 요청 시 헤더에 설정할 Content-Type을 나타냅니다. 
+ */
 enum ContentType {
   JSON = 'application/json',
   URLENCODED = 'application/x-www-form-urlencoded',
@@ -81,6 +92,12 @@ enum  HttpStatus {
  */
 export class Ajax {
 
+  /**
+   * API 서버에 요청하여 application/json을 반환합니다. 
+   * @param url API end point
+   * @param options 요청 옵션
+   * @returns  JSON
+   */
   public static json(url:string, options:AjaxRequestInit):Promise<any> {
     let innerOptions:AjaxRequestInit = {
       headers: {
@@ -92,6 +109,14 @@ export class Ajax {
     return Ajax.ajax(url, reqOptions);
   }//:
 
+
+  /**
+   * API 서버에 요청하여 text/plain을 반환합니다. 
+   * @param url API end pint
+   * @param options  요청 옵션 
+   * @returns text
+   * 
+   */
   public static text(url:string, options:AjaxRequestInit):Promise<string> {
     let innerOptions:AjaxRequestInit = {
       headers: {
@@ -103,6 +128,13 @@ export class Ajax {
     return Ajax.ajax(url, reqOptions);
   }//:
 
+
+  /**
+   * API 서버에 요청하여 text/html을 반환합니다. 
+   * @param url API end point 
+   * @param options 요청 옵션 
+   * @returns text/html
+   */
   public static html(url:string, options:AjaxRequestInit):Promise<string> {
     let innerOptions:AjaxRequestInit = {
       headers: {
@@ -114,6 +146,13 @@ export class Ajax {
     return Ajax.ajax(url, reqOptions);
   }//:
 
+
+  /**
+   * API 서버에 요청하여 바이너리를 Blob으로 반환합니다. 
+   * @param url API end point 
+   * @param options 요청 옵션
+   * @returns Blob
+   */
   public static blob(url:string, options:AjaxRequestInit):Promise<Blob> {
     let innerOptions:AjaxRequestInit = {
       headers: {
@@ -126,6 +165,11 @@ export class Ajax {
   }//:
  
     
+  /**
+   * API 서버에 요청하여 javascript을 document.head에 추가합니다. 
+   * @param url API end point
+   * @returns 성공여부 
+   */
   public static javascript(url:string):Promise<{status: boolean}> {
     return new Promise((resolve, reject) => {
       try {
