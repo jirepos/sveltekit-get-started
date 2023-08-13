@@ -9,7 +9,7 @@
 	// import * as bootstrap from 'bootstrap';
 </script>
 <svelte:head>
-	<title>SvelteKit 1.0</title>
+	<title>SvelteKit 1.0 Tutorial</title>
 	<!-- root layout을 상속 받는 모든 라우트에 적용됩니다.   -->
 	<!-- <link href="/resources/libs/bootstrap-5.3.0/css/bootstrap.min.css" rel="stylesheet" /> -->
 	<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->

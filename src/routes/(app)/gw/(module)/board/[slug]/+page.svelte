@@ -1,5 +1,5 @@
 <script lang="ts">
-	import BoardMain from '$lib/app/gw/components/module/board/BoardMain.svelte';
+	import BoardMain from '$app/gw/components/module/board/BoardMain.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data: any; // +page.ts에서 반환한 데이터
 </script>

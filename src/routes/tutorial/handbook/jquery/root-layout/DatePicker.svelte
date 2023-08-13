@@ -1,29 +1,33 @@
 <script>
+	import { onMount, onDestroy } from 'svelte';
+	import { browser } from '$app/environment';
+	// import jQuery from 'jquery';
+  // import 'jquery-ui';
 
-  	import { onMount, onDestroy } from 'svelte';
-    let pickerId = Date.now().toString() + Math.random().toString().slice(2);
+	let pickerId = Date.now().toString() + Math.random().toString().slice(2);
 
-    onMount(() => {
-      console.log("onMount");
-      setDatePicker();
-    });
+	onMount(() => {
+		console.log('onMount');
+		setDatePicker();
+	});
 
-    
-    const setDatePicker = () => {
-		// @ts-ignore
-		if (window.jQuery) {
-      // @ts-ignore
-			window.jQuery("#" + pickerId).datepicker();
-			// or
-			// window.$
-		} else {
-			console.log('jQuery is not defined');
+	const setDatePicker = () => {
+		if (browser) {
+			setTimeout(() => {
+				// @ts-ignore
+				if (window.jQuery && window.jQuery.fn.datepicker) {
+					// @ts-ignore
+					window.jQuery('#' + pickerId).datepicker();
+					// jQuery('#' + pickerId).datepicker();
+					// or
+					// window.$
+				} else {
+					console.log('jQuery is not defined');
+					setDatePicker();
+				}
+			}, 100);
 		}
 	};
-
-
 </script>
 
-<p>Date: <input type="text" id="{pickerId}" /></p>
-
-
+<p>Date: <input type="text" id={pickerId} /></p>

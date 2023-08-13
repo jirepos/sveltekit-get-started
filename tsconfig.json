@@ -1,15 +1,37 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
-		"allowJs": true,
-		"checkJs": true,
-		"esModuleInterop": true,
-		"forceConsistentCasingInFileNames": true,
+		"target": "es2016",       /* 생성할 자바스크립트 버전 */
+		"module" : "ES6",         /* 모듈을 import 구문을 사용하여 임포트 */ 
+		"allowJs": true,          /* JavaScript  파일을 임포트할 수 있게 함 */
+		"checkJs": false,          /* JavaScript 파일의 타입체크 및 에러 보고 */
+		"esModuleInterop": true,  /* Commonjs방식으로 내보낸 모듈을 es모듈 방식의 import로 가져올 수 있게 해준다.*/ 
+		"forceConsistentCasingInFileNames": true,  /* 파일의 이름을 대소문자 판별하게 하는 옵션 */
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,
-		"strict": true,
-		"noImplicitAny": false
+		"strict": true,                                      /* 아래 모든  type-checking options 활성화한다. */
+    // "noImplicitAny": true,                            /* 함수의 매개변수 등 타입이 지정되지 않은 경우 에러를 보고한다. */
+    // "strictNullChecks": true,                         /* 잠재적으로 null이 될 수 있는 값들을 엄격하게 확인. type checking할 때 null과 undefined를 고려한다.  */
+    // "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
+    // "strictBindCallApply": true,                      /* Check that the arguments for 'bind', 'call', and 'apply' methods match the original function. */
+    // "strictPropertyInitialization": true,             /* Check for class properties that are declared but not set in the constructor. */
+    // "noImplicitThis": true,                           /* this 키워드가 무엇을 가리키는지 명확하지 않을 때 에러를 발생 */
+		// "alwaysStrict": true,                             /* 컴파일 후 생성된 자바스크립트 파일이 strict mode를 사용하도록 한다. */
+		"noImplicitAny": false,                              /* 다른 라이브러리 등을 사용할 때 모두 type을 지정하기 어려워 false로 설정한다. */                            
+		// Node.js 12 이상에서는 ECMAscript imports와 CommonJS require를 모두 지원
+		// "moduleResolution": "Node"                           /*  TypeScript 컴파일러가 import 구문에서 모듈을 찾는 방식 결정  */
+		// "baseUrl": ".", 
+		// "paths": {
+		// 	"$lib":["./src/lib"],
+		// 	"$lib/*":["./src/lib/*"],
+		// 	"$tutorial" : [ "./src/tutorial" ],
+		// 	"$tutorial/*" : [ "./src/tutorial/*" ],
+		// 	"$apps" : [ "./src/apps" ],
+		// 	"$apps/*" : [ "./src/apps/*" ],
+		// 	"$ux" : [ "./src/ux" ],
+		// 	"$ux/*" : [ "./src/ux/*" ],
+		// }
 	}
 	// Path aliases are handled by https://kit.svelte.dev/docs/configuration#alias
 	//

@@ -14,7 +14,7 @@ const config = {
 		if(warning.code.startsWith('a11y-')) return
 		if(warning.code === 'css-unused-selector') return;
 		if(warning.code === 'a11y-click-events-have-key-events') return;
-    if (warning.code === 'a11y-no-noninteractive-element-interactions') return;
+    if(warning.code === 'a11y-no-noninteractive-element-interactions') return;
 		if(warning.code === 'a11y-no-static-element-interactions') return;
 		if(warning.code === 'a11y-media-has-caption')	return;
 		handler(warning);	
@@ -28,10 +28,15 @@ const config = {
 			}
 		),
 		// alias 설정
+		// 별칭은 Vite 및 TypeScript에 자동으로 전달된다고 하는데 VSCode에서는 오류로 표시됨 
+		// tsconfig.json에 paths 설정을 추가해야 함
 		alias: {
 			// alias 설정 
-			$src: './src',
-			// $app: 'src/lib/app',  // src/lib 아래로 경로 설정하면 정상 동작하지 않음 
+			'$apps':      './src/apps',
+			'$tutorial':  './src/tutorial',
+			'$ux':        './src/ux',
+			// $lib과 $app는 예약어 이므로 사용하지 말 것
+			// $app: './src/lib/app',  // src/lib 아래로 경로 설정하면 정상 동작하지 않음 
 		},		
 		version: {
 			// 이름을 기준으로 새 버전 감지 

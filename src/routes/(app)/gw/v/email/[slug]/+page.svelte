@@ -1,5 +1,5 @@
 <script lang="ts">
-	import EmailView from '$lib/app/gw/components/module/email/EmailView.svelte';
+	import EmailView from '$apps/gw/components/module/email/EmailView.svelte';
 	/** @type {import('./$types').PageData} */
 	export let data: any; // +page.ts에서 반환한 데이터
 </script>

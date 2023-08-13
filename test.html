@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+  <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.js"></script>
+  <script>
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const calendar = new tui.Calendar(document.getElementById('calendar'), {
+        defaultView: 'month',
+        taskView: true,
+        scheduleView: true,
+        template: {
+          monthDayname: function(dayname) {
+            return '<span class="calendar-week-dayname-name">' + dayname.label + '</span>';
+          }
+        }
+      });
+    });
+
+  </script>
+</head>
+<body>
+  <div id="calendar" style="height: 800px"></div>
+</body>
+</html>
